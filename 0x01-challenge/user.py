@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-""" 
+"""
 User class
 """
+
 
 class User():
     """ Documentation """
@@ -10,6 +11,11 @@ class User():
         """ Documentation """
         self.__email = None
 
+    @property
+    def email(self):
+        """ Documentation """
+        return self.__email
+
     @email.setter
     def email(self, value):
         """ Documentation """
@@ -17,12 +23,13 @@ class User():
             raise TypeError("email must be a string")
         self.__email = value
 
-    @property
+    """@property
     def email(self):
-        """ Documentation """
+        """ """Documentation""" """
         return self.__email
-   
-    
+    """
+
+
 if __name__ == "__main__":
 
     u = User()
